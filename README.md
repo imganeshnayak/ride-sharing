@@ -1,3 +1,15 @@
+## 👨‍💻 Internship Details
+
+- **Company:** CODTECH IT SOLUTIONS  
+- **Name:** Ganesh  
+- **Intern ID:** CT04DF511  
+- **Domain:** Android Development  
+- **Duration:** 4 Weeks  
+- **Mentor:** Neela Santosh  
+
+---
+
+
 <p align="center">
   <img src="./app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
 </p>
