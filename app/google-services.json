@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "224561030588",
+    "project_id": "riide-6cb10",
+    "storage_bucket": "riide-6cb10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224561030588:android:2b61d71714a04cbcd6b7b9",
+        "android_client_info": {
+          "package_name": "dz.notacompany.riide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224561030588-cp15hnofgotovnhr1f1ef06j8td1h6mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRw8pBN-X1llW6C82rrkFaHeXlVEhB3Bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224561030588-cp15hnofgotovnhr1f1ef06j8td1h6mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

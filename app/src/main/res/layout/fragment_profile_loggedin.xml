@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?attr/materialCardViewFilledStyle"
+        app:cardBackgroundColor="@color/card_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/welcomeProfileTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/welcome"
+                android:textAlignment="center"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/logout"
+                android:textColor="@color/that_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/that_red" />
+
+            <TextView
+                android:id="@+id/isInTripTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/not_in_trip"
+                android:textColor="@color/text_color01"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/openProfileInfoButton"
+                app:layout_constraintEnd_toStartOf="@+id/tripDetailsButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator0" />
+
+            <Button
+                android:id="@+id/tripDetailsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_button_color"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/details"
+                android:textColor="@color/text_color01"
+                app:layout_constraintBottom_toBottomOf="@+id/isInTripTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/isInTripTv"
+                app:layout_constraintTop_toTopOf="@+id/isInTripTv" />
+
+            <Button
+                android:id="@+id/openProfileInfoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_button_color"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/open_profile"
+                android:textColor="@color/text_color01"
+                app:layout_constraintBottom_toTopOf="@+id/githubButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isInTripTv" />
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_button_color"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/help"
+                android:textColor="@color/text_color01"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/githubButton"
+                app:layout_constraintEnd_toStartOf="@+id/githubButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/githubButton" />
+
+            <Button
+                android:id="@+id/githubButton"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_button_color"
+                android:fontFamily="@font/cairo_bold"
+                android:text="Github"
+                android:textColor="@color/text_color01"
+                app:icon="@drawable/ic_github"
+                app:iconSize="28dp"
+                app:iconTint="@color/text_color01"
+                app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/helpButton"
+                app:layout_constraintTop_toBottomOf="@+id/openProfileInfoButton" />
+
+            <TextView
+                android:id="@+id/profileIntroTextTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cairo_medium"
+                android:text="@string/intro_text"
+                android:textAlignment="center"
+                android:textColor="@color/secondary_text"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/separator0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeProfileTv" />
+
+            <TextView
+                android:id="@+id/separator0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text=""
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/isInTripTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileIntroTextTv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
